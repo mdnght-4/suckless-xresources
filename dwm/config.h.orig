@@ -12,8 +12,8 @@ static const int vertpad            = 5;       /* vertical padding of bar */
 static const int sidepad            = 10;       /* horizontal padding of bar */
 static const int horizpadbar        = 2;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 13;        /* vertical padding for statusbar */
-static const char *fonts[]          = { "JetBrainsMono:size=17", "fontawesome:size=17" };
-static const char dmenufont[]       = "JetBrainsMono:size=17";
+static const char *fonts[]          = { "Iosevka Nerd Font:size=17", "fontawesome:size=17" };
+static const char dmenufont[]       = "Iosevka Nerd Font:size=17";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#bbbbbb";
@@ -127,7 +127,6 @@ static Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
-	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },

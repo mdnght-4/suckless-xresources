@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka Custom:pixelsize=17:antialias=true:autohint=true";
-static int borderpx = 10;
+static char *font = "Iosevka Nerd Font:pixelsize=18:antialias=true:autohint=true";
+static int borderpx = 15;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -160,6 +160,7 @@ ResourcePref resources[] = {
 		{ "color13",      STRING,  &colorname[13] },
 		{ "color14",      STRING,  &colorname[14] },
 		{ "color15",      STRING,  &colorname[15] },
+		{ "background",   STRING,  &colorname[256] },
 		{ "foreground",   STRING,  &colorname[257] },
 		{ "cursorColor",  STRING,  &colorname[258] },
 		{ "termname",     STRING,  &termname },
